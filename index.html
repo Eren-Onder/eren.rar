@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Ticaret</title>
+    <link id="mytheme" rel="stylesheet"  href="./dist/style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="bolum">
+        <center>Ürünler</center>
+        <div class="urun">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Overzeas_longpocket_jeans.jpg" />
+            <div class="info">
+                <span class="baslik">Pantolon</span>
+                <span class="aciklama">Moda, erkek pantolonlarının biçimine büyük değişiklikler getirmemiştir. </span>
+                <span class="fiyat">59,90 TL</span>
+                <button class="sepeteEkle" onclick="sepeteEkle('Pantolon' , 59.90)">Sepete Ekle</button> 
+            </div>
+        </div>
+        <div class="urun">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Selburose-sweater.jpg/220px-Selburose-sweater.jpg" />
+            <div class="info">
+                <span class="baslik">Kazak</span>
+                <span class="aciklama">Kazak, vücut üst kısmına baş tarafından geçirilerek giyilen ve bel seviyesinde biten uzun kollu örme kıyafet. </span>
+                <span class="fiyat">39,90 TL</span>
+                <button class="sepeteEkle"  onclick="sepeteEkle('Kazak' , 39.90)">Sepete Ekle</button>
+            </div>
+        </div>
+        <div class="urun">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Blue_Tshirt.jpg/220px-Blue_Tshirt.jpg" />
+            <div class="info">
+                <span class="baslik">T-Shirt</span>
+                <span class="aciklama"> T-shirt, or tee shirt, is a style of fabric shirt named after the T shape of its body and sleeves. </span>
+                <span class="fiyat">29,90 TL</span>
+                <button class="sepeteEkle"   onclick="sepeteEkle('T-Shirt' , 29.90)">Sepete Ekle</button> 
+            </div>
+        </div>
+        <div class="urun">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/NMA.0038588%2C_Fashion_Photo_by_Erik_Holm%C3%A9n_1947.jpg/220px-NMA.0038588%2C_Fashion_Photo_by_Erik_Holm%C3%A9n_1947.jpg" />
+            <div class="info">
+                <span class="baslik">Hırka</span>
+                <span class="aciklama">Hırka, önden açık, genellikle yünden bir giysi.</span>
+                <span class="fiyat">89,90 TL</span>
+                <button class="sepeteEkle"  onclick="sepeteEkle('Hırka' , 89.90 )">Sepete Ekle</button>
+            </div>
+        </div>
+        <div class="urun">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Laughing_Kid.jpg/220px-Laughing_Kid.jpg" />
+            <div class="info">
+                <span class="baslik">Atkı</span>
+                <span class="aciklama">Atkı; boyun, omuz veya bazen başa atılan örtü.</span>
+                <span class="fiyat">19,90 TL</span>
+                <button class="sepeteEkle"  onclick="sepeteEkle('Atkı' , 19.90)">Sepete Ekle</button> 
+            </div>
+        </div>
+    </div>
+    <div class="bolum">
+        <center>Sepet</center>
+        <div class="divSepet">
+        <table id="tableSepet">
+            <thead>
+                <tr>    
+                    <th>Ürün Adı</th>
+                    <th>Ürün Fiyatı</th>
+                    <th>İşlem</th>
+                </th>
+            </thead>
+        </table>
+        <span>Toplam:</span>
+        <span id="spanToplam">0 TL</span>
+    </div>
+    </div>
+</div>
+</body>
+<script src="./dist/app.js"></script>
+</html>
