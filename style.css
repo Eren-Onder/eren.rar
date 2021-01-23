@@ -1,0 +1,131 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid rgb(235, 255, 182);
+    border-radius: 16px;
+    display: flex;
+  }
+
+.bolum{
+    width: 50%;
+   float: left;
+   display:flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+}
+.bolum center{
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+    height: 50px;
+}
+
+.urun{
+    flex-grow: 1;
+  width: 33%;
+  height: 200px;
+    padding:1%;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    float: left;
+    flex-grow: 3;
+    margin: 3px;
+}
+
+.urun span{
+    display: inline-block;
+    width: 100%;
+}
+
+.urun img{
+    width: 50%;
+    height: 50%;
+    padding: 3px;
+    display: inline-block;
+}
+.urun .info{
+    width: 40%;
+    padding: 3px;
+    display: inline-block;
+}
+
+.urun .baslik{
+    font-size: 24px;
+    font-weight: 600;
+    color: blue;
+    padding: 3px;
+}
+
+.urun .aciklama{
+    font-size: 13px;
+    color: lightblue;
+    padding: 3px;
+    margin-top: 10px;
+    width: auto;
+}
+
+
+.urun .fiyat{
+    font-size: 18px;
+    color: red;
+    margin: 3px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.urun .sepeteEkle{
+    padding: 7px;
+    color: lightcoral;
+    background-color: yellow;
+    margin-top: 10px;
+}
+
+.bolum table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+}
+
+.bolum table td, .bolum table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .bolum table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .bolum table tr:hover {background-color: #ddd;}
+  
+  .bolum table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+.bolum .divSepet{
+    flex-grow: 1;
+    width: 100%;
+    float: left;
+}
+
+
+.divSepet .silButton{
+    padding: 7px;
+    color: white;
+    background-color: red;
+}
+
+@media (max-width:700px){
+    .bolum{
+        width: 100%;
+        margin:5px;
+    }
+    .urun{
+        width: 50%;
+        margin:2px;
+    }
+}
